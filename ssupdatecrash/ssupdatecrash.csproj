@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>ssupdatecrash</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>ssupdatecrash</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.*" />
+    <PackageReference Include="ServiceStack" Version="5.*" />
+    <PackageReference Include="ServiceStack.OrmLite.Sqlite" Version="5.8.1" />
+    <PackageReference Include="ServiceStack.Server" Version="5.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ssupdatecrash.ServiceInterface\ssupdatecrash.ServiceInterface.csproj" />
+    <ProjectReference Include="..\ssupdatecrash.ServiceModel\ssupdatecrash.ServiceModel.csproj" />
+  </ItemGroup>
+
+</Project>
